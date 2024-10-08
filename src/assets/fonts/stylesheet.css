@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Hapna Slab Serif';
+    src: url('HapnaSlabSerif-Medium.eot');
+    src: local('Hapna Slab Serif  Medium'), local('HapnaSlabSerif-Medium'),
+        url('HapnaSlabSerif-Medium.eot?#iefix') format('embedded-opentype'),
+        url('HapnaSlabSerif-Medium.woff2') format('woff2'),
+        url('HapnaSlabSerif-Medium.woff') format('woff'),
+        url('HapnaSlabSerif-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hapna Slab Serif';
+    src: url('HapnaSlabSerif-ExtraBold.eot');
+    src: local('Hapna Slab Serif  ExtraBold'), local('HapnaSlabSerif-ExtraBold'),
+        url('HapnaSlabSerif-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('HapnaSlabSerif-ExtraBold.woff2') format('woff2'),
+        url('HapnaSlabSerif-ExtraBold.woff') format('woff'),
+        url('HapnaSlabSerif-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hapna Slab Serif';
+    src: url('HapnaSlabSerif-Bold.eot');
+    src: local('Hapna Slab Serif  Bold'), local('HapnaSlabSerif-Bold'),
+        url('HapnaSlabSerif-Bold.eot?#iefix') format('embedded-opentype'),
+        url('HapnaSlabSerif-Bold.woff2') format('woff2'),
+        url('HapnaSlabSerif-Bold.woff') format('woff'),
+        url('HapnaSlabSerif-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hapna Slab Serif';
+    src: url('HapnaSlabSerif-Regular.eot');
+    src: local('Hapna Slab Serif  Regular'), local('HapnaSlabSerif-Regular'),
+        url('HapnaSlabSerif-Regular.eot?#iefix') format('embedded-opentype'),
+        url('HapnaSlabSerif-Regular.woff2') format('woff2'),
+        url('HapnaSlabSerif-Regular.woff') format('woff'),
+        url('HapnaSlabSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hapna Slab Serif';
+    src: url('HapnaSlabSerif-DemiBold.eot');
+    src: local('Hapna Slab Serif  DemiBold'), local('HapnaSlabSerif-DemiBold'),
+        url('HapnaSlabSerif-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('HapnaSlabSerif-DemiBold.woff2') format('woff2'),
+        url('HapnaSlabSerif-DemiBold.woff') format('woff'),
+        url('HapnaSlabSerif-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hapna Slab Serif';
+    src: url('HapnaSlabSerif-Light.eot');
+    src: local('Hapna Slab Serif  Light'), local('HapnaSlabSerif-Light'),
+        url('HapnaSlabSerif-Light.eot?#iefix') format('embedded-opentype'),
+        url('HapnaSlabSerif-Light.woff2') format('woff2'),
+        url('HapnaSlabSerif-Light.woff') format('woff'),
+        url('HapnaSlabSerif-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+

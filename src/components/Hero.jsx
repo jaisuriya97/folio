@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 
 function Hero() {
+  
   const text = " Software + Developer ";
   const fontSize = [
     "13vw",
@@ -41,12 +42,20 @@ function Hero() {
         <>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           {text.split("").map((letter, index) => (
-            <span key={index} style={{ fontSize: fontSize[index] || "16px" }}>
+            <span
+              key={index}
+              style={{
+                fontSize: fontSize[index] || "16px",
+                color: index === 10 ? "#cc0210" : "black",
+              }}
+            >
               {letter}
             </span>
           ))}
         </>
+      <p className="guns"><button>* Resume *</button></p>
       </div>
+      <p className="scroll">{" "}</p>
     </div>
   );
 }

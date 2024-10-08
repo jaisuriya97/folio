@@ -1,19 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
-@import url('https://db.onlinewebfonts.com/c/ab21a97b9cae2e116d8d1473baefc9f0?family=RDR+Lino+Regular');
+
+@import url("https://db.onlinewebfonts.com/c/ab21a97b9cae2e116d8d1473baefc9f0?family=RDR+Lino+Regular");
 @font-face {
-  font-family: 'rio-grade';
-  src:url('../src/assets/fonts/SalvajeOeste.otf')
+  font-family: "rio-grade";
+  src: url("../src/assets/fonts/SalvajeOeste.otf");
 }
-@font-face{
-  font-family: 'icon-font';
-  src: url('../src/assets/fonts/Wild\ West\ Icons.ttf');
+@font-face {
+  font-family: "icon-font";
+  src: url("../src/assets/fonts/Wild\ West\ Icons.ttf");
 }
-@font-face{
-  font-family: 'milestone';
-  src: url('../src/assets/fonts/MilestoneFreeVersion-Script.otf');
+@font-face {
+  font-family: "milestone";
+  src: url("../src/assets/fonts/MilestoneFreeVersion-Script.otf");
 }
+@font-face {
+  font-family: "rdr2";
+  src: url("../src/assets/fonts/chineserocksrg.otf");
+}
+
+@font-face {
+  font-family: "chineserocks";
+  src: url("../src/assets/fonts/chineserocksrg.otf");
+}
+
 
 * {
   margin: 0;
@@ -24,57 +32,76 @@
 body {
   background-color: rgb(255, 255, 255);
 }
-.main-div{
+.main-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: whitesmoke;
+}
+.nav-container .left{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.nav-container .left  p{
+font-family: "RDR Lino Regular";
+  font-size: 1.5rem;
+  color: black;
+  padding: .5rem;
+  /* background-color: black; */
+}
+.nav-container .left span{
+  font-family: "rio-grade";
+  font-size: 1.5rem;
+  color: #ecb33e;
+}
+.nav-container ul{
+  display: flex;
+  gap: 2rem;
+}
+.nav-container ul li{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-container ul li button, .nav-container ul li button .links{
+  text-align: center;
+  font-family: "rdr2";
+  font-size: 1.5rem;
+  color: whitesmoke;
+  background-color: transparent;
+  background-image: url("../src/assets/btn-ng.png");
+  background-size: cover;
+  background-position: center;
+  padding: .65em .8em .45em .8em;
+  width: max-content;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+.nav-container ul li button:hover , .nav-container ul li button:hover .links{
+  color: #c00;
+}
+.hero {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.nav-container {
-  display: grid;
-  place-items: center;
-  position: fixed;
-  top: 0;
-  z-index: 100;
-}
-
-.nav-container ul {
-  width: max-content;
-  display: flex;
-  list-style: none;
-  gap: 20px;
-  border: solid 1px rgb(0, 0, 0);
-  border-radius: 60px;
-  padding: 5px;
-  margin: 0.8rem;
-}
-
-.nav-container ul li {
-  font-family: "Josefin Sans", sans-serif;
-  cursor: pointer;
-  color: rgb(0, 0, 0);
-  padding: 12px;
-  border: solid 1px transparent;
-  box-sizing: border-box;
-  border-radius: 60px;
-  transition: background-color 0.3s, border 0.3s, transform 0.3s;
-}
-.nav-container ul li:hover {
-  background-color: #3838386b;
-  border: solid 1px #6c6c6c;
-}
-.hero{
-    background-color: whitesmoke;
-    width: 100%;
-    height: 100vh;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
-}
-.header{
+.header {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -82,24 +109,197 @@ body {
   color: rgb(0, 0, 0);
   text-align: center;
 }
-.header div{
+.header div {
   font-size: 5rem;
-  border: solid 1px rgb(0, 0, 0);
+  border: solid 1px #c00;
   padding: 1rem;
   border-radius: 50%;
   height: 5rem;
   width: 5rem;
-  font-family: 'icon-font';
+  font-family: "icon-font";
+  color: #c00;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.header h2{
+.header h2 {
   font-family: "RDR Lino Regular";
 }
-.role{
+.role {
   display: flex;
   white-space: nowrap;
   color: rgb(0, 0, 0);
-     font-family: "rio-grade";
+  font-family: "rio-grade";
 }
+.scroll{
+  background-image: url("../src/assets/arrow.png");
+  background-size: cover;
+  background-position: center;
+  margin-top: 10rem;
+  width: 3rem;
+  height: 4rem;
+}
+.guns{
+  /* font-family: 'icon-font'; */
+  font-family: "rdr2";
+  font-size:10rem;
+  color: black;
+  position: absolute;
+  top: 60%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  
+}
+.guns button{
+  background-image: url("../src/assets/btn-ng.png");
+  background-size: cover;
+  background-position: center;
+  border: none;
+  padding: 1.5rem 2rem;
+  font-size: 1.5rem;
+  font-family: "chineserocks";
+  margin-left: 2rem;
+  width: max-content;
+  color: whitesmoke;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; 
+}
+.guns button:hover{
+  color: #ecb33e;
+  transform: scale(1.0);
+}
+.Hero_About-container {
+  width: 100%;
+  z-index: 2;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
+
+.Hero_About-container h2{
+  margin: 2rem;
+  width: 70%;
+  font-size: calc(4rem + 1vw);
+    font-family: "rdr2";
+}
+
+.Hero_About-container h2 span{
+  color: #c00;
+  text-decoration: underline;
+}
+
+.Hero_About-container button {
+  background-image: url("../src/assets/btn-ng.png");
+  background-size: cover;
+  background-position: center;
+  border: none;
+  padding: 1.5rem 2rem;
+  font-size: 3rem;
+  font-family: "chineserocks";
+  margin-left: 2rem;
+  width: max-content;
+  color: #f6f6f6;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.Hero_About-container button span {
+  font-family: "icon-font";
+}
+
+.Hero_About-container button:hover {
+  color: #c00;
+  transform: scale(1.02); 
+}
+
+.work-container{
+  width: 100%;
+  display: flex;
+  gap: 5rem;
+  flex-direction: column;
+  /* background-color: whitesmoke; */
+  /* background: linear-gradient(rgba(0, 0, 0, 0.433), rgba(0, 0, 0, 0.512)), url("https://s.rsg.sc/sc/images/games/RDR2/bg.jpg"); */
+  background: linear-gradient(rgba(0, 0, 0, 0.433), rgba(0, 0, 0, 0.512)), url("https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/c7183f93924e4730e4e5b0f90cd7b25f.jpg");
+  /* background: linear-gradient(rgba(0, 0, 0, 0.786), rgba(0, 0, 0, 0.712)),url("https://shtheme.org/preview/westex/intro-images/img/background/SINGLE-bg.jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  
+}
+
+.work-header{
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  flex-direction: column;
+}
+
+.work-container .work-header span{
+  margin-right: 2rem;
+  text-align: end;
+  font-size: calc(10rem + 1vw);
+  font-family: "rdr2";
+  color: rgb(255, 255, 255);
+}
+.work-container .work-header span span{
+  font-family: "icon-font";
+  color: rgb(255, 255, 255);
+}
+.work-cards{
+  margin: 2rem;
+}
+.work-cards .cards{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+.work-cards .cards .card{
+  position: relative;
+  cursor: pointer;
+   transition: transform 0.3s ease;
+
+}
+.work-cards .cards .card:hover {
+  z-index: 999;
+  transform: scale(1.01);
+/* box-shadow:-5px 5px 5px rgba(204, 0, 0, 0.433); */
+  transition: transform 0.3s ease;
+}
+
+.work-cards .cards .card h3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3vw;
+  font-family: "rdr2";
+  color: #c00;
+  padding: 1rem;
+  visibility: hidden; 
+  opacity: 0; 
+  transition: visibility 0s 0.3s, opacity 0.3s ease; 
+  z-index: 1;
+
+}
+.work-cards .cards .card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(80%);
+  /* border-radius: 2px; */
+}
+.work-cards .cards .card img:hover , .work-cards .cards .card:hover img{
+  filter: brightness(15%);
+  transition: filter 0.3s ease;
+}
+.work-cards .cards .card:hover h3 { 
+  visibility: visible;
+  opacity: 1; 
+  transition-delay: 0s; 
+}
+
